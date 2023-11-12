@@ -2,7 +2,7 @@
 
 ### Description
 
-Welcome! This minimalistic to-do-list app was built using [React](https://react.dev/) and [Tailwind CSS](https://tailwindcss.com/). It gives the user the ability to add and remove tasks, as well as mark them as completed.   
+Welcome! This minimalistic to-do-list app was built using [React](https://react.dev/) and [Tailwind CSS](https://tailwindcss.com/). It gives the user the ability to add and remove tasks, as well as mark them completed.  
 
 ### Required dependencies
 
