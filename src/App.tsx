@@ -345,6 +345,22 @@ const Stats = memo(function Stats({ stats }: { stats: StatsType }) {
                     <dd className="mt-1 text-3xl tracking-wider font-semibold tracking-tight text-gray-900">
                         {stats.completed}/{stats.completed + stats.pending}
                     </dd>
+                    <div className="mt-3 px-3 flex flex-col">
+                        <span className="text-gray-500 mb-1">
+                            {(stats.completed /
+                                (stats.completed + stats.pending)) *
+                                100}
+                            %
+                        </span>
+                        <div className="w-full bg-gray-300 rounded-full h-2">
+                            <div
+                                className="bg-green-500 h-2 rounded-full transition-all duration-700 ease-in-out"
+                                style={{
+                                    width: `${(stats.completed / (stats.completed + stats.pending)) * 100}%`,
+                                }}
+                            ></div>
+                        </div>
+                    </div>
                 </div>
                 <div className="overflow-hidden text-center rounded-xs bg-white px-4 py-5 shadow-sm">
                     <dt className="truncate text-lg font-medium text-gray-600">
